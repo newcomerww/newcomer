@@ -13,6 +13,14 @@ bot.on('message', function (msg) {
   const messag = msg.text;
   const chatId = msg.chat.id;
   const message=messag.substring(0,3);
+if(messag =='/start'){
+
+bot.sendMessage(chatId, 'Hello there! I am gemini , a large language model, trained by Google.How can I assist you?');
+
+
+
+
+}
   if(messag !== '/start'){
 async function run1() {
   // For text-only input, use the gemini-pro model
